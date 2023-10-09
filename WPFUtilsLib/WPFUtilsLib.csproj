@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="PLCs\Siemens\_PLC Description_.txt" />
     <None Remove="Resources\2760214.png" />
     <None Remove="Resources\Archive_1.ico" />
     <None Remove="Resources\Archive_2.ico" />
@@ -26,12 +25,6 @@
     <None Remove="Resources\Upload.png" />
     <None Remove="Resources\WarningSmiley.png" />
     <None Remove="Resources\WhiteDot.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="PLCs\Siemens\_PLC Description_.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -68,6 +61,12 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Sharp7" Version="1.1.82" />
     <PackageReference Include="SuperSimpleTcp" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="PLCs\Siemens\_PLC Description_.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
