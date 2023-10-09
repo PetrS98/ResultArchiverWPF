@@ -5,8 +5,23 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>Archive_1.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\Archive_1.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class\**" />
+    <Compile Remove="Enums\**" />
+    <Compile Remove="UserControls\**" />
+    <EmbeddedResource Remove="Class\**" />
+    <EmbeddedResource Remove="Enums\**" />
+    <EmbeddedResource Remove="UserControls\**" />
+    <None Remove="Class\**" />
+    <None Remove="Enums\**" />
+    <None Remove="UserControls\**" />
+    <Page Remove="Class\**" />
+    <Page Remove="Enums\**" />
+    <Page Remove="UserControls\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Remove="Archive_3.png" />
@@ -15,13 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Archive_1.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Class\" />
-    <Folder Include="Enums\" />
-    <Folder Include="UserControls\" />
+    <Content Include="Resources\Archive_1.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,9 +38,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Archive_3.png" />
-    <Resource Include="Archive_4.png" />
-    <Resource Include="NexenLogo.png" />
+    <Resource Include="Resources\Archive_3.png" />
+    <Resource Include="Resources\Archive_4.png" />
+    <Resource Include="Resources\NexenLogo.png" />
   </ItemGroup>
 
 </Project>
