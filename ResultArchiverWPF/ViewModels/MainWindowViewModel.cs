@@ -61,7 +61,7 @@ namespace ResultArchiverWPF.ViewModels
 
                 if (amountOfFile >= settings.MaxAmountOfArchiveFileInFolder)
                 {
-                    App.Logger.Information($"Amounth of file is bigger or equal then set. Set is: {settings.MaxAmountOfArchiveFileInFolder}");
+                    App.Logger.Warning($"Amounth of file is bigger or equal then set. Set is: {settings.MaxAmountOfArchiveFileInFolder}");
                     App.Logger.Information($"Deleting all file above set value. Set is: {settings.MaxAmountOfArchiveFileInFolder}");
 
                     for (int i = settings.MaxAmountOfArchiveFileInFolder - 1; i < amountOfFile; i++)
