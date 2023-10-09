@@ -1,0 +1,22 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ResultArchiverWPF"
+        xmlns:IOs="clr-namespace:WPFUtilsLib.UserControls.IOs;assembly=WPFUtilsLib"
+        x:Class="ResultArchiverWPF.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FF2D2D2D" WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <IOs:TopFormBar x:Name="topBar" Border_BorderThickness="0,1,0,1" TitleImage_ImageSource="/NexenLogo.png" TitleText_Text="Result Archiver V1.0.0"/>
+        <TextBlock x:Name="textBlock" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock"/>
+
+    </Grid>
+</Window>

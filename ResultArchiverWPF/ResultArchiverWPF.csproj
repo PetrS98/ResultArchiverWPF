@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Archive_1.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Archive_3.png" />
+    <None Remove="Archive_4.png" />
+    <None Remove="NexenLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Archive_1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Class\" />
+    <Folder Include="Enums\" />
+    <Folder Include="UserControls\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WPFUtilsLib\WPFUtilsLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Archive_3.png" />
+    <Resource Include="Archive_4.png" />
+    <Resource Include="NexenLogo.png" />
+  </ItemGroup>
+
+</Project>
