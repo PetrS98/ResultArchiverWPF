@@ -1,4 +1,6 @@
-﻿namespace ResultArchiverWPF.Classes
+﻿using System.Collections.Generic;
+
+namespace ResultArchiverWPF.Classes
 {
     public static class Constants
     {
@@ -14,5 +16,12 @@
 
         public static readonly long MIN_FREE_SPACE_ON_DRIVE = 5368709120; // In bytes, In GB: 5.3687 GB
         public static readonly long MAX_SIZE_OF_ARCHIVE_FILE = 104857600; // In bytes, In MB: 104.86 MB
+
+        public static readonly List<string> PASSWORDS = new()
+        { 
+            "mnt3012",
+            "8adxp5jq",
+            "123698547"
+        };
     }
 }

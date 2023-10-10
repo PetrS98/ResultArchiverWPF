@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using WPFUtilsLib.Services.Enums;
 
 namespace ResultArchiverWPF
 {
@@ -13,7 +12,6 @@ namespace ResultArchiverWPF
             InitializeComponent();
 
             topBar.Window = this;
-            topBar.ClosingAction = ClosingAction.CloseApp;
         }
     }
 }

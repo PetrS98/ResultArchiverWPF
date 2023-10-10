@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ResultArchiverWPF"
-        xmlns:IOs="clr-namespace:WPFUtilsLib.UserControls.IOs;assembly=WPFUtilsLib"
+        xmlns:UserControls="clr-namespace:ResultArchiverWPF.UserControls"
         x:Class="ResultArchiverWPF.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" 
@@ -16,14 +16,14 @@
         BorderBrush="Black" 
         ResizeMode="NoResize" 
         WindowStartupLocation="CenterScreen">
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-
-        <IOs:TopFormBar x:Name="topBar" Border_BorderThickness="0,0,0,1" Border_ThicknesBrush="Black" TitleImage_ImageSource="/Resources/NexenLogo.png" TitleText_Text="Result Archiver" TitleText_FontSize="13"/>
+        
+        <UserControls:TopFormBar x:Name="topBar" Border_BorderThickness="0,0,0,1" Border_ThicknesBrush="Black" TitleImage_ImageSource="/Resources/NexenLogo.png" TitleText_Text="Result Archiver" TitleText_FontSize="13"/>
 
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
