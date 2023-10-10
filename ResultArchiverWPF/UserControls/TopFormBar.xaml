@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ResultArchiverWPF.UserControls"
-             mc:Ignorable="d">
+             mc:Ignorable="d" Height="31">
     <Grid>
         <Border x:Name="Border" BorderBrush="#FF444444" BorderThickness="1">
             <Grid>
@@ -27,7 +27,7 @@
                 <Button Name="btnMinimize" Grid.Column="1" Foreground="Gray" Click="btnMinimize_Click" Margin="0,0,1,0">
                     <Button.Content>
                         <Viewbox>
-                            <TextBlock Text="🗕" Padding="2,0,2,8"/>
+                            <TextBlock Text="---" Padding="2,0,2,1" ScrollViewer.CanContentScroll="True"/>
                         </Viewbox>
                     </Button.Content>
                     <Button.Style>

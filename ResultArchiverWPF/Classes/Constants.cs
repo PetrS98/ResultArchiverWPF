@@ -6,7 +6,7 @@ namespace ResultArchiverWPF.Classes
     {
         public static readonly string MUTEX_APP_NAME = "NexenTire-ResultArchiver_WPF";
 
-        public static readonly string APPLICATION_VERSION = "V 1.0.1";
+        public static readonly string APPLICATION_VERSION = "V 1.0.2";
 
         public static readonly string SETTINGS_PATH = "settings.json";
 
