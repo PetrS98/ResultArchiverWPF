@@ -8,7 +8,7 @@ namespace ResultArchiverWPF.Classes.Helpers
     {
         public static SettingsJDO ReadSettings(string path)
         {
-            App.Logger.Information($"Read Configuration File from: {FileFolderHelper.GetApplicationFolder()}\\{path}");
+            App.Logger.Information($@"Read Configuration File from: {FileFolderHelper.GetApplicationFolder()}\{path}");
 
             SettingsJDO? _settings = null;
 

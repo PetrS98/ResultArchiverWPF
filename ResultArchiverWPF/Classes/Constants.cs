@@ -18,7 +18,7 @@ namespace ResultArchiverWPF.Classes
         public static readonly long MAX_SIZE_OF_ARCHIVE_FILE = 104857600; // In bytes, In MB: 104.86 MB
 
         public static readonly List<string> PASSWORDS = new()
-        { 
+        {
             "mnt3012",
             "8adxp5jq",
             "123698547"

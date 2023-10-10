@@ -1,1 +1,1 @@
-dotnet publish -c Release --self-contained -p:PublishSingleFile=true
+﻿dotnet publish -c Release --self-contained -p:PublishSingleFile=true
