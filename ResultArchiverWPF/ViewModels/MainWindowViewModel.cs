@@ -132,6 +132,7 @@ namespace ResultArchiverWPF.ViewModels
                 }
             }
 
+            App.Logger.Information("-----------------------------------------------------------------------");
             App.Logger.Information($"New File Created: {e.FullPath}");
 
             string destinationPath = Path.ChangeExtension(_settings.DestinationPath + @"\\" + Path.GetFileName(e.FullPath), ".zip");

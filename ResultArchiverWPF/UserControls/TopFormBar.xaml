@@ -27,12 +27,12 @@
                 <Button Name="btnMinimize" Grid.Column="1" Foreground="Gray" Click="btnMinimize_Click" Margin="0,0,1,0">
                     <Button.Content>
                         <Viewbox>
-                            <TextBlock Text="---" Padding="2,0,2,1" ScrollViewer.CanContentScroll="True"/>
+                            <TextBlock Text="---" Padding="4,0,4,1" ScrollViewer.CanContentScroll="True"/>
                         </Viewbox>
                     </Button.Content>
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
-                            <Setter Property="Background" Value="#FF262626"/>
+                            <Setter Property="Background" Value="{x:Null}"/>
                             <Setter Property="Template">
                                 <Setter.Value>
                                     <ControlTemplate TargetType="{x:Type Button}">
@@ -54,12 +54,12 @@
                 <Button Name="btnClose" Grid.Column="2" Foreground="Gray" Click="btnClose_Click">
                     <Button.Content>
                         <Viewbox>
-                            <TextBlock Text="✕" Padding="2,0,2,0"/>
+                            <TextBlock Text="✕" Padding="6,0,6,0"/>
                         </Viewbox>
                     </Button.Content>
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
-                            <Setter Property="Background" Value="#FF262626"/>
+                            <Setter Property="Background" Value="{x:Null}"/>
                             <Setter Property="Template">
                                 <Setter.Value>
                                     <ControlTemplate TargetType="{x:Type Button}">

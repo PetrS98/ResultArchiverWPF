@@ -10,7 +10,6 @@ namespace ResultArchiverWPF.JDOs
         public bool DeleteResultAfterArchivate { get; set; } = false;
         public bool DeleteOldestAndNonResultIfNoFreeSpaceOnDrive { get; set; } = true;
         public int MaxAmountOfArchiveFileInFolder { get; set; } = 500;
-        public bool EnableLoging { get; set; } = false;
         public CompressionLevel CompressionLevel { get; set; } = 0;
         public FileCheckerSettingsJDO FileCheckerSettings { get; set; } = new FileCheckerSettingsJDO();
     }

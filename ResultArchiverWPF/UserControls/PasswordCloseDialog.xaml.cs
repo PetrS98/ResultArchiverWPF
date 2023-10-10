@@ -58,5 +58,15 @@ namespace ResultArchiverWPF.UserControls
 
             lblError.Content = "Error. Passwords is not correct.";
         }
+
+        private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Visibility == Visibility.Visible) 
+            {
+                lblError.Content = "";
+                passwordBox.Password = "";
+                passwordBox.Focus();
+            }
+        }
     }
 }

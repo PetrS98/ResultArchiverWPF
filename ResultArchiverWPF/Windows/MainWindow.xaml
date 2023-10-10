@@ -7,7 +7,7 @@
         xmlns:UserControls="clr-namespace:ResultArchiverWPF.UserControls"
         x:Class="ResultArchiverWPF.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" 
+        Title="Result Archiver" 
         Height="200" 
         Width="380" 
         Background="#FF2D2D2D" 
@@ -23,7 +23,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         
-        <UserControls:TopFormBar x:Name="topBar" Border_BorderThickness="0,0,0,1" Border_ThicknesBrush="Black" TitleImage_ImageSource="/Resources/NexenLogo.png" TitleText_Text="Result Archiver" TitleText_FontSize="13"/>
+        <UserControls:TopFormBar x:Name="topBar" Border_BorderThickness="0,0,0,2" Border_ThicknesBrush="Black" TitleImage_ImageSource="/Resources/NexenLogo.png" TitleText_Text="Result Archiver" TitleText_FontSize="13"/>
 
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
@@ -51,7 +51,13 @@
             </Border>
 
             <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"  BorderThickness="1,0,1,0" BorderBrush="White">
-                <Label Content="This application is only for Nexen Tire Czech." HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Run Text="This application is only for" Foreground="White"/>
+                    <Hyperlink NavigateUri="https://www.nexentire.com/cz/" RequestNavigate="Hyperlink_RequestNavigate" TextDecorations="None">
+                        <Run Text="NEXEN TIRE" Foreground="DarkMagenta" ToolTip="https://www.nexentire.com/cz/"/>
+                    </Hyperlink>
+                    <Run Text="Czech." Foreground="White"/>
+                </TextBlock>
             </Border>
 
             <Border Grid.Row="3" Grid.Column="1"  BorderThickness="1,1,1,0" BorderBrush="White">

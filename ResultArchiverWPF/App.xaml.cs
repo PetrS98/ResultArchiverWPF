@@ -16,7 +16,7 @@ namespace ResultArchiverWPF
         private static Mutex? _mutex = null;
 
         public static ILogger Logger = new LoggerConfiguration()
-                .WriteTo.File(path: Constants.LOG_PATH, retainedFileCountLimit: 10, rollingInterval: RollingInterval.Day)
+                .WriteTo.File(path: Constants.LOG_PATH, retainedFileCountLimit: 7, rollingInterval: RollingInterval.Day)
                 .CreateLogger();
 
         private SettingsJDO _settings = new();
@@ -31,6 +31,7 @@ namespace ResultArchiverWPF
                 Shutdown();
             }
 
+            App.Logger.Information("########################################################################");
             Logger.Information("Program Starting.");
 
             ReadAndCheckSettings();

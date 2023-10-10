@@ -10,7 +10,7 @@ namespace ResultArchiverWPF.Classes.Helpers
     {
         public static string GetApplicationFolder()
         {
-            string fullPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string fullPath = AppDomain.CurrentDomain.BaseDirectory;
 
             if (fullPath is null)
             {
@@ -18,7 +18,7 @@ namespace ResultArchiverWPF.Classes.Helpers
             }
             else
             {
-                return Path.GetDirectoryName(fullPath)!;
+                return fullPath;
             }
         }
 

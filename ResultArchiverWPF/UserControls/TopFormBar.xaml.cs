@@ -25,18 +25,6 @@ namespace ResultArchiverWPF.UserControls
 
         #endregion
 
-        #region Close Button Properties
-
-        public string CloseButton_Text { get { return btnClose.Content.ToString()!; } set { btnClose.Content = value; } }
-        public Brush CloseButton_BackColor { get { return btnClose.Background; } set { btnClose.Background = value; } }
-        public Brush CloseButton_ForeColor { get { return btnClose.Foreground; } set { btnClose.Foreground = value; } }
-        public FontStyle CloseButton_FontStile { get { return btnClose.FontStyle; } set { btnClose.FontStyle = value; } }
-        public double CloseButton_FontSize { get { return btnClose.FontSize; } set { btnClose.FontSize = value; } }
-        public FontWeight CloseButton_FontWeight { get { return btnClose.FontWeight; } set { btnClose.FontWeight = value; } }
-        public FontFamily CloseButton_FontFamily { get { return btnClose.FontFamily; } set { btnClose.FontFamily = value; } }
-
-        #endregion
-
         #region Border Properties
 
         public Brush Border_ThicknesBrush { get { return Border.BorderBrush; } set { Border.BorderBrush = value; } }
