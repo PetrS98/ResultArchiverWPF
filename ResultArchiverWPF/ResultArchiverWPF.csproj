@@ -7,7 +7,7 @@
 	  <RuntimeIdentifier>win-x86</RuntimeIdentifier>
 	  <Platforms>AnyCPU</Platforms>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>Resources\Archive_1.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\Archive_2.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Resources\Archive_1.ico" />
+    <Content Include="Resources\Archive_2.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,7 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\Archive_3.png" />
     <Resource Include="Resources\Archive_4.png" />
     <Resource Include="Resources\NexenLogo.png" />
   </ItemGroup>
